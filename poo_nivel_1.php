@@ -5,51 +5,51 @@
 
     class Employee
     {
-        public $nombre;
-        public $sueldo;
+        public string $name;
+        public float $salary;
 
-        function __construct($nombre, $sueldo)
+        function __construct(string $name, float $salary)
         {
-            $this->nombre = $nombre;
-            $this->sueldo = $sueldo;
+            $this->name = $name;
+            $this->salary = $salary;
         }
-        function get_nombre()
+        function getName()
         {
-            return $this->nombre;
+            return $this->name;
         }
 
-        function imprimir()
+        function print() : void
         {
-            if ($this->sueldo > 6000) {
-                echo $this->nombre . " debes pagar impuestos";
+            if ($this->salary > 6000) {
+                echo $this->name . " debes pagar impuestos";
             } else {
-                echo $this->nombre . " no debes pagar impuestos";
+                echo $this->name . " no debes pagar impuestos";
             }
         }
     }
 
     $empleado = new Employee("Marta", 9000);
-    echo $empleado->get_nombre();
+    echo $empleado->getName();
     echo "<br>";
-    $empleado->imprimir();
+    $empleado->print();
 
     //Ejercicio 2
 
     abstract class Shape
     {
-        public $height;
-        public $width;
-        function __construct($height, $width)
+        public float|int $height;
+        public float|int $width;
+        function __construct(float|int $height, float|int $width)
         {
             $this->height = $height;
             $this->width = $width;
         }
 
-        function get_height()
+        function getHeight()
         {
             return $this->height;
         }
-        function get_width()
+        function getWidth()
         {
             return $this->width;
         }
