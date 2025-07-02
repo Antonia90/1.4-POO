@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #76113d;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+section.cinema,
+section.search {
+  background: white;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+.movies {
+  margin-top: 1em;
+  text-align: start;
+  }
+
+.movies h2,
+.movies h4 {
+  margin: 0.5em 0;
+}
+
+.catalog{
+  text-align: center;
+  background-color: #e76da2;
+  padding: 10px;
+  margin: 20px;
+}
+.info-movie{
+  margin-top: 40px;
+}
+.longer {
+  margin-top: 1em;
+  padding: 0.5em;
+  background: #ebd6e5;
+  border-left: 5px solid #dd037b;
+}
+
+.search p {
+  margin-bottom: 1em;
+}
+
